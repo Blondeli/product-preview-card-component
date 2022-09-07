@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: hsl(158, 36%, 37%);
+  --primary-active-color: hsl(157, 43%, 18%);
+  --bg-color: hsl(30, 38%, 92%);
+  --title-color: hsl(212, 21%, 14%);
+  --text-color: hsl(228, 12%, 48%); 
+}
+
+body {
+  align-items: center;
+  background-color: var(--bg-color);
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Card component */
+main {
+  background-color: white;
+  border-radius: 10px;
+  width: 90%;
+}
+
+/* Main image */
+#main-img {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+}
+
+/* Main text section */
+#main-text-box {
+  padding: 1.5rem;
+}
+
+h1 {
+  color: var(--text-color);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: 'Fraunces', serif;
+  font-size: 2rem;
+  line-height: 2rem;
+  margin: 0.75rem 0 1rem 0;
+}
+
+p {
+  color: var(--text-color);
+  font-size: 0.875rem;
+  line-height: 1.4375rem;
+}
+
+/* Price section */
+#price-box {
+  align-items: center;
+  display: flex;
+  gap: 19px;
+  margin: 1.5rem 0 1.25rem 0;
+}
+
+#new-price {
+  color: var(--primary-color);
+  font-family: 'Fraunces', serif;
+  font-size: 2rem;
+}
+
+#old-price {
+  color: var(--text-color);
+  font-size: 0.8215rem;
+  text-decoration: line-through;
+}
+
+/* Add to cart button */
+button {
+  align-items: center;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  padding: 15px;
+  width: 100%;
+  transition: background-color 200ms ease-in-out;
+}
+
+button:hover {
+  background-color: var(--primary-active-color);
+  cursor: pointer;
+}
+
+button > span {
+  color: white;
+  font-weight: 700;
+  font-size: 0.875rem;
+}
